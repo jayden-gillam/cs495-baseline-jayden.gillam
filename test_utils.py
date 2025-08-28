@@ -11,3 +11,8 @@ def test_wrapping():
 
 def test_non_alpha_characters():
     assert caesar_cipher("hello, world! 123", 5) == "mjqqt, btwqi! 123"
+
+
+def test_case_insensitivity():
+    assert caesar_cipher("HeLloO", 3) == "khoorr"
+
